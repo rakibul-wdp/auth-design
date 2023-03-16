@@ -111,6 +111,7 @@ a {
 } */
 
 body {
+  background-color: rgb(235, 235, 235);
   display: flex;
   justify-content: center;
   align-items: center;
