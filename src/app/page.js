@@ -6,8 +6,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1 className='text-2xl font-bold text-red-500'>Hello World</h1>
-    </main>
+    <div className='w-screen h-screen'>
+      <div></div>
+      <div>
+        <Image src="/auth.svg" alt="me" width="500" height="500" />
+      </div>
+    </div>
   )
 }
