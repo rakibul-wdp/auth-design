@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className='w-9/12 h-[80vh] bg-white shadow-lg rounded-2xl flex items-center justify-around'>
       <div className=''>
-        <div className='mt-[-3rem] mb-16 flex items-center justify-around'>
+        <div className='mt-[-3rem] mb-16 lg:ml-[-15rem] xl:ml-[-23rem] 2xl:ml-[-25rem] flex items-center justify-around'>
           <Image className='' src="/logo.svg" alt="me" width="50" height="50" />
           <p className='text-sm block sm:block md:block lg:hidden xl:hidden 2xl:hidden'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="w-full relative mb-5">
             <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#0858F7]" id="inline-password" type="password" placeholder="******************" />
             <button
-              className="absolute inset-y-0 flex items-center justify-center ml-[15rem] px-4 text-gray-600"
+              className="absolute inset-y-0 flex items-center justify-center ml-[15rem] sm:ml-[18rem] lg:ml-[15rem] xl:ml-[16rem] px-4 text-gray-600"
               onClick={togglePasswordVisibility}
             >
               {isPasswordVisible ? (
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
         </form>
         <p className='text-center text-[#0858F7] font-bold'>Forgot your password?</p>
-        <p className='text-sm mb-[-10rem] ml-[-5rem] mt-20 hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
+        <p className='text-sm mb-[-10rem] lg:mb-[-3rem] ml-[-5rem] lg:ml-10 xl:ml-6 2xl:ml-2 mt-20 hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
       </div>
       <div className='hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>
         <Image src="/auth.svg" alt="me" width="500" height="500" />
