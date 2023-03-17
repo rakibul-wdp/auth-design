@@ -17,23 +17,26 @@ export default function Home() {
   return (
     <div className='w-9/12 h-[80vh] bg-white shadow-lg rounded-2xl flex items-center justify-around'>
       <div className=''>
-        <Image className='mt-[-10rem] ml-[-5rem] mb-20' src="/logo.svg" alt="me" width="50" height="50" />
-        <h1 className='text-3xl font-bold mb-5'>Welcome to <br /> DiGiLABS</h1>
-        <form>
+        <div className='mt-[-3rem] mb-16 flex items-center justify-around'>
+          <Image className='' src="/logo.svg" alt="me" width="50" height="50" />
+          <p className='text-sm block sm:block md:block lg:hidden xl:hidden 2xl:hidden'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
+        </div>
+        <h1 className='text-3xl w-3/4 m-auto font-bold mb-12'>Welcome to <br /> DiGiLABS</h1>
+        <form className='w-3/4 m-auto'>
           <div className="w-full mb-5 flex">
             <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-l-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#0858F7]" id="inline-full-name" type="text" value="Jane Doe" />
             <div className='relative block appearance-none bg-gray-200 border border-gray-200 text-gray-700 pr-8 rounded-r-lg leading-tight focus:outline-none focus:bg-white focus:border-[#0858F7]'>
-              <select class="py-3 px-4 rounded-lg bg-white focus:outline-none focus:bg-white focus:border-[#0858F7] border-0" id="grid-state">
+              <select className="py-3 px-4 rounded-lg bg-white focus:outline-none focus:bg-white focus:border-[#0858F7] border-0" id="grid-state">
                 <option>New Mexico</option>
                 <option>Missouri</option>
                 <option>Texas</option>
               </select>
             </div>
           </div>
-          <div className="w-full mb-5">
+          <div className="w-full relative mb-5">
             <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#0858F7]" id="inline-password" type="password" placeholder="******************" />
             <button
-              className="absolute inset-y-0 flex items-center justify-center mb-[-2.8rem] ml-[25.5rem] px-4 text-gray-600"
+              className="absolute inset-y-0 flex items-center justify-center ml-[15rem] px-4 text-gray-600"
               onClick={togglePasswordVisibility}
             >
               {isPasswordVisible ? (
@@ -81,9 +84,9 @@ export default function Home() {
           </div>
         </form>
         <p className='text-center text-[#0858F7] font-bold'>Forgot your password?</p>
-        <p className='text-sm mb-[-10rem] ml-[-5rem] mt-20'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
+        <p className='text-sm mb-[-10rem] ml-[-5rem] mt-20 hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>Not member? <span className='text-[#0858F7]'>Create account</span></p>
       </div>
-      <div>
+      <div className='hidden sm:hidden md:hidden lg:block xl:block 2xl:block'>
         <Image src="/auth.svg" alt="me" width="500" height="500" />
       </div>
     </div>
